@@ -1,13 +1,11 @@
-package com.example.vaccineslotreminder.data;
+package com.dorona.vaccineslotreminder.data;
 
 import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
-import androidx.annotation.Nullable;
-
-import com.example.vaccineslotreminder.params.Params;
+import com.dorona.vaccineslotreminder.params.Params;
 
 import java.util.ArrayList;
 import java.util.HashMap;

@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/titleText"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_textview"
+        android:textColor="#ffff"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:textAlignment="center"
+        android:text="Vaccine Available\n5000"
+        android:textStyle="bold"
+        android:gravity="center_horizontal" />
+
+    <TextView
+        android:id="@+id/bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10px"
+        android:layout_toRightOf="@+id/titleText"
+        android:text="|"
+        android:textSize="15dp"
+        android:textAppearance="@style/TextAppearance.Compat.Notification.Line2"
+        android:textStyle="bold" />
+    <TextView
+        android:layout_toRightOf="@+id/bar"
+        android:id="@+id/pincodeText"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pincode\n461990"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:textColor="#FFFFFF"
+        android:textAlignment="center"
+        android:background="@drawable/rounded_textview"
+        android:layout_marginLeft="10px"
+        android:gravity="center_horizontal" />
+    <TextView
+        android:layout_below="@+id/titleText"
+        android:id="@+id/centerAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:textAppearance="@style/TextAppearance.Compat.Notification.Line2"
+        android:ellipsize="end"
+        android:layout_marginTop="5dp"
+        android:scrollHorizontally="true"
+        android:text="GOVT HIGH SEC SCHOOL BANKHEDI"/>
+
+    <TextView
+        android:id="@+id/bar1"
+        android:layout_toRightOf="@id/pincodeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="|"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:layout_marginLeft="10px"
+        android:layout_marginRight="10px"
+        android:textAppearance="@style/TextAppearance.Compat.Notification.Line2"/>
+    <TextView
+        android:id="@+id/feeType"
+        android:layout_toRightOf="@id/bar1"
+        android:background="@drawable/rounded_textview_green"
+        android:paddingRight="5dp"
+        android:paddingLeft="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Paid"
+        android:textColor="#ffff"/>
+    <TextView
+        android:id="@+id/notificationTime"
+        android:layout_toRightOf="@id/feeType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="5dp"
+        android:textAppearance="@style/TextAppearance.Compat.Notification.Time"
+        android:text="15:10"/>
+    <TextView
+        android:id="@+id/minimumAgeLimit"
+        android:layout_toRightOf="@id/bar1"
+        android:layout_below="@+id/feeType"
+        android:background="@drawable/rounded_textview_green"
+        android:paddingRight="5dp"
+        android:paddingLeft="5dp"
+        android:layout_marginTop="2dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="45+"
+        android:textColor="#ffff"/>
+    <TextView
+        android:layout_below="@+id/centerAddress"
+        android:id="@+id/fullAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:textAppearance="@style/TextAppearance.Compat.Notification.Info"
+        android:layout_marginTop="5dp"
+        android:scrollHorizontally="true"
+        android:text="Bankhedi,Hoshangabad,Madhya Pradesh"/>
+
+    <TextView
+        android:layout_below="@+id/fullAddress"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/timings"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Timings: 10:00:00 - 10:00:00"
+        android:textAppearance="@style/TextAppearance.Compat.Notification.Time"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10px"
+
+        android:layout_alignParentRight="true" />
+    <TextView
+        android:layout_below="@+id/fullAddress"
+        android:id="@+id/tapToOpenCoWin"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tap to Book your Slot"
+        android:textAppearance="@style/TextAppearance.Compat.Notification.Time"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10px"
+
+        android:layout_alignParentLeft="true" />
+
+
+
+</RelativeLayout>

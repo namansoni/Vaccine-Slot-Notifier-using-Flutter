@@ -1,4 +1,4 @@
-package com.example.vaccineslotreminder.params;
+package com.dorona.vaccineslotreminder.params;
 
 public class Params {
     public static final int DB_VERSION=1;

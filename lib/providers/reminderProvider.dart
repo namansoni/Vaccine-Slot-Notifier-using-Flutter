@@ -23,20 +23,24 @@ class ReminderProvider extends ChangeNotifier {
     notifyListeners();
   }
 
-  Future setReminder(String pincode, int minimumAgeLimit) async {
-    reminders.add(
-      ReminderModel(
-        id: pincode,
-        availableSlots: "15",
-        pincode: pincode,
-        minimumAgeLimit: minimumAgeLimit,
-      ),
-    );
-
-    Database database = await openDatabase1();
-    await database
-        .rawInsert("INSERT INTO Reminders VALUES($pincode,$pincode,0,$minimumAgeLimit)");
-    notifyListeners();
+  Future<bool> setReminder(String pincode, int minimumAgeLimit) async {
+    try {
+      Database database = await openDatabase1();
+      await database.rawInsert(
+          "INSERT INTO Reminders VALUES(${pincode + minimumAgeLimit.toString()},$pincode,0,$minimumAgeLimit)");
+      reminders.add(
+        ReminderModel(
+          id: pincode + minimumAgeLimit.toString(),
+          availableSlots: "15",
+          pincode: pincode,
+          minimumAgeLimit: minimumAgeLimit,
+        ),
+      );
+      notifyListeners();
+      return true;
+    } catch (e) {
+      return false;
+    }
   }
 
   void deleteReminder(ReminderModel reminder) async {
