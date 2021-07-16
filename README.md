@@ -1,16 +1,10 @@
 # vaccineslotreminder
 
-A new Flutter project.
+Vaccine Slot Notifier notifies the user as soon as the slot is available in the requested Pincode.
+# How to use:
 
-## Getting Started
+1. Change battery optimization setting to "Don't optimize" or a similar setting according to the device.
+2. Add the desired Pincode and age group for which you want to get notified.
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+# Download from playstore
+https://play.google.com/store/apps/details?id=com.dorona.vaccineslotreminder
